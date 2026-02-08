@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forex Quiz</title>
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+<body class="quiz-body">
+
+  <div class="quiz-card">
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+
+    <h3 id="question"></h3>
+
+    <div class="options">
+      <button onclick="selectAnswer(0)"></button>
+      <button onclick="selectAnswer(1)"></button>
+      <button onclick="selectAnswer(2)"></button>
+      <button onclick="selectAnswer(3)"></button>
+    </div>
+
+    <button id="nextBtn" onclick="nextQuestion()">Next</button>
+
+    <div class="quiz-controls">
+        <button id="backBtn" onclick="prevQuestion()">Back</button>
+        <button id="restartBtn" onclick="restartQuiz()">Restart</button>
+        <button id="endBtn" onclick="endQuiz()">End Quiz</button>
+        <button id="homeBtn" onclick="goHome()">Home</button>
+    </div>
+
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Forex Quiz</title>
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+<body class="dashboard-body">
+
+  <header class="dashboard-header">
+    <h2 id="welcome"></h2>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <section class="sessions">
+    <div class="session-card" data-session="1" onclick="startSession(1)">
+  <h3>Session 1</h3>
+  <p>Forex Basics</p>
+</div>
+
+<div class="session-card locked" data-session="2" onclick="startSession(2)">
+  <h3>Session 2</h3>
+  <p>Market Structure</p>
+</div>
+
+<div class="session-card locked" data-session="3" onclick="startSession(3)">
+  <h3>Session 3</h3>
+  <p>Technical Analysis</p>
+</div>
+
+<div class="session-card locked" data-session="4" onclick="startSession(4)">
+  <h3>Session 4</h3>
+  <p>Risk & Psychology</p>
+</div>
+
+<div class="session-card locked" data-session="5" onclick="startSession(5)">
+  <h3>Session 5</h3>
+  <p>Advanced Concepts</p>
+</div>
+
+  </section>
+
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
